@@ -12,7 +12,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'no-reply@' + 'gmail.com'
+  config.mailer_sender = 'no-reply@' + 'Rails.application.secrets.domain_name'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -263,7 +263,7 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
-  config.omniauth :facebook, "1466696496940225", "036c0a37e655e959a66403c702d91713"
+  config.omniauth :facebook, "776665925787272", "3b4d323652a0f768c27e78ea7895ab76"
   config.omniauth :twitter, "KEY", "SECRET"
   config.omniauth :linked_in, "KEY", "SECRET"
 end
