@@ -1,0 +1,62 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="header-container">
+      <div class="first-header-section">
+        <div class="header-link-block">
+          <%= link_to '#', :class => 'header-link' do %>
+            <span class="glyphicon glyphicon-earphone header-phone-icon"></span>
+            <span class="header-link-title">1.866.555.5555</span>
+          <% end %>
+          <%= link_to '#', :class => 'header-link' do %>
+            <span class="glyphicon glyphicon-cloud header-live-help-icon"></span>
+            <span class="header-link-title">Live Help</span>
+          <% end %>
+          <%= link_to '#', :class => 'header-link' do %>
+            <span class="glyphicon glyphicon-globe header-locale-icon"></span>
+            <span class="header-link-title">English</span>
+            <span class="glyphicon glyphicon-triangle-bottom header-locale-arrow"></span>
+          <% end %>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="second-header-section">
+        <div class="navbar-header navbar-header-redefine">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to 'Care Compass', root_path, class: 'navbar-brand navbar-brand-redefine hidden-xs' %>
+        </div>
+
+        <div class="explore-view-block col-lg-8 row">                    
+          <div class="explore-block col-lg-6">
+            <span>Explore:</span>
+            <ul>
+              <li><%= link_to 'PLANS', '#', class: 'explore-plans' %></li>
+              <li><%= link_to 'PROVIDERS', '#', class: 'explore-providers' %></li>
+            </ul>
+          </div>
+
+          <div class="view-block col-lg-6">
+              <span>View:</span>
+              <ul>
+                <li><%= link_to 'ALL PLANS', '#', class: 'view-all-plans' %></li>
+                <li><%= link_to 'BOOKMARKS', '#', class: 'view-bookmarks' %></li>
+              </ul>
+              <span class="glyphicon glyphicon-bookmark"></span>
+          </div>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-redefine">
+          <ul class="navbar-nav-redefine">
+            <%= render 'layouts/navigation_links' %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
