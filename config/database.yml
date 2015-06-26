@@ -51,11 +51,7 @@ test:
   template: template0
 
 production:
-  adapter:  postgresql
-  host:     ec2-54-227-247-161.compute-1.amazonaws.com
-  encoding: unicode
-  database: da4guontttkc21
+  adapter:  sqlite3
   pool:     5
-  username: jlqyoddrfgkgvt
-  password: 1pm72XbKOvo-ZrPoNkhTHGhtc5
-  template: template0
+  timeout:  5000
+  database: db/production.sqlite3

@@ -12,6 +12,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'devise'
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'rubocop'
 end
 group :production do
+  gem 'sqlite3', '1.3.8'
   gem 'rails_12factor'
 end
 group :test do
