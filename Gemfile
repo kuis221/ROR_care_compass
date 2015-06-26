@@ -42,7 +42,7 @@ group :development, :test do
   gem 'rubocop'
 end
 group :production do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3'
   gem 'rails_12factor'
 end
 group :test do
