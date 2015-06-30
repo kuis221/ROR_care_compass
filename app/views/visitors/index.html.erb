@@ -1,44 +1,37 @@
 <% provide(:title, 'Home Page') %>
-<div class="homepage-wrapper">
-  <div class="homepage-logo-block">
-    <div class="homepage-welcome-title text-center">
-      <h1>Welcome to CareCompass</h1>
-    </div>
-    <div class="homepage-logo-title">
-      <p>Explore Plans</br>In My Area</p>
-    </div>
-    <div class="homepage-logo-description row">
-      <div class="homepage-logo-desc1 pull-left">
-        <p></br>Marketplace</br>Glosssary & FAQ</p>
-      </div>
-      <div class="homepage-logo-desc2 pull-right">
-        <p>Find Local</br>Help For My</br>Plan Search</p>
-      </div>
-    </div>
-  </div>
-  <div class="homepage-desc-block row">
-    <div class="col-lg-12 col-sm-12 col-xs-12">
-      <h2>Overview of Features</h2>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <p>An education section offers definitions of terms & answers to frequently asked questions.
-        A cursor hover feature is also present over terms (i.e. Premium, Deductible, etc.) in every application
-        screen for quick consumer reference in the user's current page view.</p>
-      </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <p>Customers can contact support personnel via phone or in-application messaging for help in navigating the application.
-        We support English & Spanish, the first & second national languages. A consumer can also click on Find Local Help for a list of community navigators in their area.</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="homepage-social-icons">
-    <ul>
-      <li><%= link_to image_tag('facebook.png', alt: 'Facebook'), 'http://facebook.com' %></li>
-      <li><%= link_to image_tag('twitter.png', alt: 'Twitter'), 'http://twitter.com' %></li>
-      <li><%= link_to image_tag('google_plus.png', alt: 'Google Plus'), 'http://plus.google.com' %></li>
-      <li><%= link_to image_tag('pinterest.png', alt: 'Pinterest'), 'http://pinterest.com' %></li>
-      <li><%= link_to image_tag('email.png', alt: 'Email'), '#' %></li>
-      <li><%= link_to image_tag('printer.png', alt: 'Printer'), '#' %></li>
-    </ul>
+<% content_for :overview do %>
+  <div class="col-lg-12 col-sm-12 col-xs-12 footer-overview">
+    <h2>Overview of Features</h2>
+    <div class="col-lg-6 col-sm-6 col-xs-12">
+      <p>An education section offers definitions of terms & answers to frequently asked questions.
+      A cursor hover feature is also present over terms (i.e. Premium, Deductible, etc.) in every application
+      screen for quick consumer reference in the user's current page view.</p>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-xs-12">
+      <p>Customers can contact support personnel via phone or in-application messaging for help in navigating the application.
+      We support English & Spanish, the first & second national languages. A consumer can also click on Find Local Help for a list of community navigators in their area.</p>
+    </div>
+  </div>
+<% end %>
+<div class="homepage-logo-block">
+  <div class="homepage-welcome-title text-center">
+    <h1>Welcome to CareCompass</h1>
+  </div>
+  <div class="homepage-logo-title">
+    <p>Explore Plans</br>In My Area</p>
+  </div>
+  <div class="homepage-logo-description row">
+    <div class="homepage-logo-desc1 pull-left">
+      <p></br>Marketplace</br>Glosssary & FAQ</p>
+    </div>
+    <div class="homepage-logo-desc2 pull-right">
+      <p>Find Local</br>Help For My</br>Plan Search</p>
+    </div>
   </div>
 </div>
+
+    
+
+
+

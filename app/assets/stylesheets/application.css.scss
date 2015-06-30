@@ -22,6 +22,7 @@ $lightGray: #999;
 /* header */
 main {
   padding-bottom: 0;
+  margin-top: 65px;
 }
 
 .first-header-section {
@@ -212,50 +213,72 @@ main {
 
 /* homepage */
 .homepage-wrapper {
-
-  .homepage-logo-block {
-    background: url("carecompass_logo.png") center center no-repeat;
+  .homepage-content-block {
     min-height: 377px;
     padding: 0 20px;
+    .homepage-logo-block {
+      background: url("carecompass_logo.png") center center no-repeat;
 
-    .homepage-welcome-title {
-      h1 {
-        line-height: 89px;
-        color: #0033cc;
-        font-family: serif;
-      }
-    }
-
-    .homepage-logo-title {
-      p {
-        line-height: 55px;
-        text-align: center;
-        visibility: hidden;
-        font-size: 51px;
-        color: red;
-      }
-    }
-
-    .homepage-logo-description {
-      margin-top: 45px;
-      
-      .homepage-logo-desc1 {
-        p {
-          color: #446691;
-          font-size: 30px;
+      .homepage-welcome-title {
+        h1 {
+          line-height: 89px;
+          color: #0033cc;
           font-family: serif;
         }
       }
 
-      .homepage-logo-desc2 {
+      .homepage-logo-title {
         p {
-          color: #446691;
-          font-size: 30px;
-          font-family: serif;
+          line-height: 55px;
+          text-align: center;
+          visibility: hidden;
+          font-size: 51px;
+          color: red;
         }
+      }
+
+      .homepage-logo-description {
+        margin-top: 45px;
+        
+        .homepage-logo-desc1 {
+          p {
+            color: #446691;
+            font-size: 30px;
+            font-family: serif;
+          }
+        }
+
+        .homepage-logo-desc2 {
+          p {
+            color: #446691;
+            font-size: 30px;
+            font-family: serif;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #1f487c;
+      font-size: 20px;
+    }
+
+    .user-profile-page {
+      .user-profile-zipcode {
+        
+      }
+
+      .user-profile-dropdown {
+        display: inline-block;
+      }
+
+      .dropdown {
+        display: inline-block;
       }
     }
   }
+  
+  
 
   .homepage-desc-block {
     background: #2989d8; /* Old browsers */
@@ -268,6 +291,7 @@ main {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
 
     padding-bottom: 20px;
+    min-height: 252px;
     h2 {
       font-size: 22px;
       color: black;
@@ -303,5 +327,16 @@ main {
       color: white;
       font-weight: bold;
     }
+  }
+
+  .log-in-button-redefine {
+    background-color: #48b9ad;
+  }
+}
+
+.shared_links {
+  margin-top: 40px;
+  a {
+    display: block;
   }
 }

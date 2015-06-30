@@ -15,7 +15,7 @@ Devise.setup do |config|
   config.mailer_sender = 'no-reply@' + 'gmail.com' # 'Rails.application.secrets.domain_name'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Devise::Mailer'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -263,7 +263,11 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
+  require 'omniauth-google-oauth2'
+
   config.omniauth :facebook, "776665925787272", "3b4d323652a0f768c27e78ea7895ab76"
   config.omniauth :twitter, "KEY", "SECRET"
   config.omniauth :linked_in, "KEY", "SECRET"
+  config.omniauth :google_oauth2, "744210286091-v120nd7018gihuirjvbqn6khrrktfgnh.apps.googleusercontent.com", "arWqo6kZLCjSnez3TZziFZZg", { access_type: "offline", approval_prompt: "" }
+  
 end

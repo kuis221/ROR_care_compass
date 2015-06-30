@@ -4,29 +4,40 @@
     <h4>Sign up or Log in to save your searches, select a plan, and save providers. This will enable you to refer
     back to your plan benefits and provider network quickly & easily from the web or your mobile device!</h4>
     <%= devise_error_messages! %>
-    <div class="form-group">
-      <%- if devise_mapping.registerable? %>
-        <%= link_to 'Sign up', new_registration_path(resource_name), class: 'right'  %>
-      <% end -%>
-      <%= f.label :email %>
-      <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
-    </div>
-    <div class="form-group">
-      <%- if devise_mapping.recoverable? %>
-        <%= link_to "Forgot password?", new_password_path(resource_name), class: 'right' %>
-      <% end -%>
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-    </div>
-      <%= f.submit 'Sign in', :class => 'button right' %>
-      <% if devise_mapping.rememberable? -%>
-        <div class="checkbox" style="width:150px">
-          <label>
-            <%= f.check_box :remember_me %> Remember me
-          </label>
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 col-xs-6">
+        <%= render "users/shared/links" %>
+      </div>
+      <div class="col-lg-6 col-sm-6 col-xs-6">
+        <div class="form-group">
+          <% if devise_mapping.registerable? %>
+            <%= link_to 'Sign up', new_registration_path(resource_name), class: 'right'  %>
+          <% end -%>
+          <%= f.label :email %>
+          <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
         </div>
-      <% end -%>
+        <div class="form-group">
+          <% if devise_mapping.recoverable? %>
+            <%= link_to "Forgot password?", new_password_path(resource_name), class: 'right' %>
+          <% end -%>
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit 'Log in', :class => 'button right log-in-button-redefine' %>
+
+          <% if devise_mapping.rememberable? -%>
+            <div class="checkbox" style="width:150px">
+              <label>
+                <%= f.check_box :remember_me %> Remember me
+              </label>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
 
-<%= render "users/shared/links" %>
+

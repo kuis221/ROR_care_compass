@@ -13,7 +13,11 @@
     <%= render 'layouts/header' %>
     <main role="main">
        <%= render 'layouts/messages' %>
-       <%= yield %>
+        <div class="homepage-wrapper">
+          <%= render 'layouts/homepage_content' %>
+          <%= render 'layouts/homepage_footer' %>                    
+          <%= render 'layouts/footer' %>
+        </div>
     </main>
   </body>
 </html>

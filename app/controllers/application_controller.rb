@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_filter :ensure_signup_complete, only: [:new, :create, :update, :destroy]
+  #before_filter :ensure_signup_complete, only: [:new, :create, :update, :destroy]
 
   def ensure_signup_complete
     # Ensure we don't go into an infinite loop

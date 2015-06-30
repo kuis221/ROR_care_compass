@@ -36,6 +36,7 @@ Rails.application.configure do
     user_name: ENV['MANDRILL_USERNAME'], # Rails.application.secrets.email_provider_username,
     password: ENV['MANDRILL_APIKEY'] # Rails.application.secrets.email_provider_apikey
   }
+
   # ActionMailer Config  
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp

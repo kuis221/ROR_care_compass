@@ -94,6 +94,8 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.8)
+    figaro (1.1.1)
+      thor (~> 0.14)
     foreman (0.78.0)
       thor (~> 0.19.1)
     globalid (0.3.5)
@@ -139,6 +141,9 @@ GEM
       rack (~> 1.0)
     omniauth-facebook (2.0.1)
       omniauth-oauth2 (~> 1.2)
+    omniauth-google-oauth2 (0.2.6)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
     omniauth-linkedin (0.2.0)
       omniauth-oauth (~> 1.0)
     omniauth-oauth (1.1.0)
@@ -292,6 +297,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  figaro
   foreman
   hub
   jbuilder (~> 2.0)
@@ -299,6 +305,7 @@ DEPENDENCIES
   launchy
   omniauth
   omniauth-facebook
+  omniauth-google-oauth2
   omniauth-linkedin
   omniauth-twitter
   pg

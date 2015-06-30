@@ -26,6 +26,8 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem 'omniauth-google-oauth2'
+gem "figaro"
 
 group :development do
   gem 'foreman'

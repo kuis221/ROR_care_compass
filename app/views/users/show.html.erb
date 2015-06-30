@@ -1,0 +1,33 @@
+<% provide(:title, @user.name) %>
+
+<% content_for :overview do %>
+  <div class="col-lg-12 col-sm-12 col-xs-12 footer-overview">
+    <h2>Overview of Features</h2>
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <p>We support optional sign-up & login through our application along with social media avenues to provide consumers with an easy account creation and login process, after which they will have the ability to save plans, providers, and searches on a personal dashboard and share their preferences with their social network.
+      Returning users may also login in order to refer back to their plan's benefits, visualize their selected plan's provider network, and rate plans and/or providers.</p>
+    </div>    
+  </div>
+<% end %>
+
+<div class="user-profile-page">
+	<p class="user-profile-zipcode">My Zip Code is [zipcode]</p>
+	<p class="user-profile-dropdown">and I'd like to cover</p>
+	<div class="dropdown">
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    Dropdown
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="#">me</a></li>
+	    <li><a href="#">me & my spouse</a></li>
+	    <li><a href="#">me, my spouse, & kids</a></li>
+	    <li><a href="#">me & my kids</a></li>
+	  </ul>
+	</div>
+	<p>I'm [27] years old.</p>
+	<p>My family makes $[25,000] per year.</p>
+	<p>There is [1] person in my tax household.</p>
+
+	<p>Please only show me plans with [Doctor or Facility's name] in-network*</p>
+</div>
